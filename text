@@ -1,0 +1,7 @@
+ const client=new Client({
+user:"postgres",password:"147899891",host:"localhost",port:"5432",database:"test1"
+});
+const s=process.env.DB_HOST;
+client.connect().then(()=>console.log("connection successfully ya aboSeed")).catch(e =>console.log(e)).finally(()=>client.end());
+//DATABASE_URL=postgres://postgres:147899891@127.0.0.1:5432/tes1;
+D//ATABASE_URL=postgres://postgres:123456@127.0.0.1:5432/dummy
